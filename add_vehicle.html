@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Vehicle Page</title>
+</head>
+<body style="text-align: center;">
+<style>
+form {
+ border: 1px solid black;
+ padding: 50px;
+border-radius: 60px;
+ background-color: #ffb6c1;
+ width: 600px;
+ margin: 0 auto;
+}
+
+ body{
+	background-color: #FFD580;
+	color: #000000;
+	font-family: Times New Roman;
+	text-align: center;
+}
+
+ input[type=submit] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+border-radius: 60px;
+}
+
+</style>
+
+
+	<h1>Add New Vehicle Page</h1>
+
+	<form action="add_vehicle.php" method="POST">
+
+
+		<label for="vin">Enter VIN:</label>
+		<input type="text" name="vin" required><br><br><br>
+		<label for="color">Enter Color:</label>
+		<input type="text" name="color" required><br><br><br>
+		<label for="mfg">Enter Mfg:</label>
+		<input type="date" name="mfg" required><br><br><br>
+		<label for="type">Enter Type:</label>
+		<input type="text" name="type" required><br><br><br>
+		<label for="year">Enter Year:</label>
+		<input type="number" name="year" required><br><br><br>
+		
+		<input type="submit" value="Register New Vehicle">
+
+	</form><br><br><br>
+</body>
+</html>
